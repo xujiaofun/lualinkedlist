@@ -1,7 +1,7 @@
 # lualinkedlist
 lua的链表实现
 
-'''
+```lua
 ---@type LinkedList
 local lst = require("LinkedList")()
 lst:addLast(7)
@@ -48,5 +48,4 @@ print("-- walk: { }")
 for i, v in lst:walk() do
 print(i, v)
 end
-
-'''
+```
