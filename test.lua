@@ -1,4 +1,3 @@
---local lst = require("linked-list").new()
 ---@type LinkedList
 local lst = require("LinkedList")()
 lst:addLast(7)
@@ -45,14 +44,4 @@ print("-- walk: { }")
 for i, v in lst:walk() do
     print(i, v)
 end
-
-
---function getLen()
---    print("getlen")
---    return 4
---end
---
---for i = 1, getLen() do
---    print(i)
---end
 
