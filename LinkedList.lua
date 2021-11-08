@@ -55,7 +55,7 @@ function LinkedList:contains(value)
 end
 
 function LinkedList:addLast(value)
-    if value == nil and self:contains(value) then return false end
+    if value == nil or self:contains(value) then return false end
 
     if self._last ~= nil then
         self._next[self._last] = value
@@ -70,7 +70,7 @@ function LinkedList:addLast(value)
 end
 
 function LinkedList:addFirst(value)
-    if value == nil and self:contains(value) then return false end
+    if value == nil or self:contains(value) then return false end
 
     if self._first ~= nil then
         self._prev[self._first] = value
